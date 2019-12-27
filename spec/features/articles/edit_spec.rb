@@ -21,6 +21,7 @@ describe "user edits exisiting article" do
       expect(current_path).to eq(article_path(article_1))
 
       expect(page).to have_content("Edited Title!")
+      expect(page).to have_content("Article 'Edited Title!' was updated.")
 
     end
   end
